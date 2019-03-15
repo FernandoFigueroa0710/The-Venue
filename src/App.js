@@ -5,7 +5,11 @@ import Header from "../src/components/header_footer/Header";
 
 class App extends Component {
   render() {
-    return <Header />;
+    return (
+      <div style={{ height: "1500px", background: "grey" }}>
+        <Header />
+      </div>
+    );
   }
 }
 
