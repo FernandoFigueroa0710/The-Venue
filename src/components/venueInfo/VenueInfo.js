@@ -40,7 +40,7 @@ const VenueInfo = () => {
                 </div>
                 <div className="vn_title">Event Location</div>
                 <div className="vn_desc">
-                  1232 Woodward Ave, Detroit MI 48282
+                  500 Temple St Detroit, MI 48201 USA
                 </div>
               </div>
             </div>
