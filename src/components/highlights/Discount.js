@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 
+import MyButton from "../UI/MyButton";
+
 class Discount extends Component {
   state = {
     discountStart: 0,
@@ -42,7 +44,7 @@ class Discount extends Component {
                 felis bibendum ut tristique et egestas. Consequat id porta nibh
                 venenatis cras sed felis eget. Faucibus in ornare quam viverra.
               </p>
-              <div>Button</div>
+              <MyButton />
             </div>
           </Slide>
         </div>
