@@ -3,7 +3,7 @@ import Description from "./Description";
 
 const Highlights = () => {
   return (
-    <div className="">
+    <div className="highlight_wrapper">
       <Description />
     </div>
   );
