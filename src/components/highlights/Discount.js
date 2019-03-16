@@ -44,7 +44,12 @@ class Discount extends Component {
                 felis bibendum ut tristique et egestas. Consequat id porta nibh
                 venenatis cras sed felis eget. Faucibus in ornare quam viverra.
               </p>
-              <MyButton />
+              <MyButton
+                text="Purchase Tickets"
+                bck="#ffa800"
+                color="#ffffff"
+                link="http://ticketmaster.com"
+              />
             </div>
           </Slide>
         </div>

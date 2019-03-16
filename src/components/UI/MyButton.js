@@ -4,16 +4,16 @@ import ticket_icon from "../../resources/images/icons/ticket.png";
 const MyButton = props => {
   return (
     <Button
-      href="http://google.com"
+      href={props.link}
       variant="contained"
       size="small"
       style={{
-        background: "red",
-        color: "white"
+        background: props.bck,
+        color: props.color
       }}
     >
       <img src={ticket_icon} className="iconImage" alt="icon_button" />
-      Button
+      {props.text}
     </Button>
   );
 };
