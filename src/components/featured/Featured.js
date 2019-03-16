@@ -1,10 +1,10 @@
 import React from "react";
-import Carrusel from "./Carrusel";
+import Carrousel from "./Carrousel";
 
 const Featured = () => {
   return (
     <div style={{ postion: "relative" }}>
-      <Carrusel />
+      <Carrousel />
       <div className="artist_name">
         <div className="wrapper">Ariana Grande</div>
       </div>
