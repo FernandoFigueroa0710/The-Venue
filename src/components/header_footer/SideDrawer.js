@@ -3,6 +3,7 @@ import React from "react";
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+import Divider from "@material-ui/core/Divider";
 
 const SideDrawer = props => {
   return (
@@ -15,19 +16,19 @@ const SideDrawer = props => {
         <ListItem button onClick={() => console.log("Event Starts In")}>
           Event Starts In
         </ListItem>
-
+        <Divider />
         <ListItem button onClick={() => console.log("Venue Info")}>
           Venue Info
         </ListItem>
-
+        <Divider />
         <ListItem button onClick={() => console.log("Highlights")}>
           Highlights
         </ListItem>
-
+        <Divider />
         <ListItem button onClick={() => console.log("Pricing")}>
           Pricing
         </ListItem>
-
+        <Divider />
         <ListItem button onClick={() => console.log("Location")}>
           Location
         </ListItem>
