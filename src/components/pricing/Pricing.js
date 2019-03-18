@@ -21,7 +21,7 @@ class Pricing extends Component {
 
   displayPricing = () =>
     this.state.prices.map((price, i) => (
-      <Zoom top delay={this.state.delay[i]}>
+      <Zoom top delay={this.state.delay[i]} key={i}>
         <div className="pricing_item">
           <div className="pricing_inner_wrapper">
             <div className="pricing_title">
