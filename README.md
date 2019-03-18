@@ -2,6 +2,7 @@
 
 The venue is a sample page for a concert hall featuring an event dated for Dec 16 2019
 built with React, Material-UI, CSS and deployed to [Surge](https://surge.sh/)
+![alt text](https://github.com/FernandoFigueroa0710/The-Venue/blob/master/src/resources/images/slide_one.jpg)
 
 ## What I've learned on this project:
 
