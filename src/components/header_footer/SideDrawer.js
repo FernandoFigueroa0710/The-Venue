@@ -1,31 +1,45 @@
 import React from "react";
-import { scroller } from "react-scroll";
+import { animateScroll as scroll, scroller } from "react-scroll";
 
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Divider from "@material-ui/core/Divider";
 
-const SideDrawer = props => {
-  const scrollToElement = element => {
+const SideDrawer = (props) => {
+  const scrollToElement = (element) => {
     scroller.scrollTo(element, {
       duration: 1500,
       delay: 100,
       smooth: true,
-      offset: 150
+      offset: -125,
     });
 
     props.onClose(false);
   };
-
+  const scrollToTopElement = (element) => {
+    scroll.scrollToTop(element, {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+      offset: 0,
+    });
+  };
+  const scrollToBottomElement = (element) => {
+    scroll.scrollToBottom(element, {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+      offset: 0,
+    });
+  };
   return (
     <Drawer
       anchor="right"
       open={props.open}
-      onClose={() => props.onClose(false)}
-    >
+      onClose={() => props.onClose(false)}>
       <List component="nav">
-        <ListItem button onClick={() => scrollToElement("Featured")}>
+        <ListItem button onClick={() => scrollToTopElement("Featured")}>
           Event Starts In
         </ListItem>
         <Divider />
@@ -41,7 +55,7 @@ const SideDrawer = props => {
           Pricing
         </ListItem>
         <Divider />
-        <ListItem button onClick={() => scrollToElement("Location")}>
+        <ListItem button onClick={() => scrollToBottomElement("Location")}>
           Location
         </ListItem>
       </List>

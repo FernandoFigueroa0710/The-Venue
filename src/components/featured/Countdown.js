@@ -3,11 +3,11 @@ import Fade from "react-reveal/Fade";
 
 class Countdown extends Component {
   state = {
-    eventDate: "Dec, 16, 2019",
+    eventDate: "Dec, 16, 2020",
     days: "0",
     hours: "0",
     minutes: "0",
-    seconds: "0"
+    seconds: "0",
   };
 
   getTimeUntil() {
@@ -24,7 +24,7 @@ class Countdown extends Component {
         days,
         hours,
         minutes,
-        seconds
+        seconds,
       });
     }
   }
